@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Galaxy</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <!-- Materialize CDN -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Local styling and scripts -->
+    <link rel="stylesheet" href="main.css" media="screen" title="no title">
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper white-text black">
+        <a href="#" id="logo" class="brand-logo"><span class="red-text">GA</span>LAXY</a>
+        <a data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right">
+          <li><a href="#modal1" id="login" class="modal-trigger">Login</a></li> <li><a id="logout" class="hidden">Logout</a></li>
+        </ul>
+
+        <!-- Full size view -->
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a class="dropdown-button" href="#" data-activates="dropdown1">For Students<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-button" href="#" data-activates="dropdown2">For Teachers<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-button" href="#" data-activates="dropdown3">For Parents<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+
+        <!-- Dropdown Data -->
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a class="black-text">For Students</a></li>
+          <li class="divider"></li>
+          <li><a href="#" class="black-text">Link 1</a></li>
+          <li><a href="#" class="black-text">Link 2</a></li>
+          <li><a href="#" class="black-text">Link 3</a></li>
+        </ul>
+        <ul id="dropdown2" class="dropdown-content">
+          <li><a class="black-text">For Teachers</a></li>
+          <li class="divider"></li>
+          <li><a href="#" class="black-text">Link 1</a></li>
+          <li><a href="#" class="black-text">Link 2</a></li>
+          <li><a href="#" class="black-text">Link 3</a></li>
+        </ul>
+        <ul id="dropdown3" class="dropdown-content">
+          <li><a class="black-text">For Parents</a></li>
+          <li class="divider"></li>
+          <li><a href="#" class="black-text">Link 1</a></li>
+          <li><a href="#" class="black-text">Link 2</a></li>
+          <li><a href="#" class="black-text">Link 3</a></li>
+        </ul>
+
+
+        <!-- Mobile View SideNav -->
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="#">For Students</a></li>
+          <li><a href="#">For Teachers</a></li>
+          <li><a href="#">For Parents</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Login</h4>
+        <label for="name">Username</label>
+        <input type="email" name="name" value="email@ga.com">
+        <label for="password">Password</label>
+        <input type="password" name="name" value="password">
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Log in</a>
+      </div>
+    </div>
+
+    <main class="container">
+      <h1 class="out-banner">You Are Not Logged In!</h1><br>
+      <h3 class="out-banner">Click Login, enter any data, and then hit 'Log In'.</h3>
+      <h1 class="in-banner hidden">You Are Currently Logged In!</h1>
+      <h3 class="in-banner hidden">Click the logout button to logout.</h3>
+    </main>
+
+    <footer>
+      <div class="footer-copyright black">
+        <div class="container flex-foot">
+        <span class="grey-text">© 2016 <span class='red-text'>GA</span>LAXY</span>
+        <a href="#" class="grey-text">Licensing Information</a>
+        <a href="#" class="grey-text">Terms of Use</a>
+        <a href="#" class="grey-text">Privacy Policy</a>
+        <span class="grey-text">Developed @ <a href="https://generalassemb.ly/" class="red-text">GA</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
