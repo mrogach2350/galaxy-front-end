@@ -7,4 +7,14 @@ $(document).ready(function() {
 
   // triggers login modal
   $('.modal-trigger').leanModal();
+
+  $('.modal-action').on('click', function(){
+    $('#login').addClass('hidden');
+    $('#logout').removeClass('hidden');
+  });
+
+  $('#logout').on('click', function(){
+    $('#login').removeClass('hidden');
+    $('#logout').addClass('hidden');
+  });
 });
